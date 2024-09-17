@@ -23,7 +23,22 @@ class TampilData extends StatelessWidget {
         margin: const EdgeInsets.all(10),
         child: Column(
           children: [
-            Text("Nama saya $nama, NIM $nim, dan umur saya adalah $umur tahun"),
+            // Text("Nama saya $nama, NIM $nim, dan umur saya adalah $umur tahun"),
+            ListTile(
+              leading: const Icon(Icons.person),
+              title: Text(nama),
+              subtitle: const Text('Nama'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.school),
+              title: Text(nim),
+              subtitle: const Text('NIM'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.calendar_month),
+              title: Text('$umur tahun'),
+              subtitle: const Text('Umur'),
+            )
           ],
         ),
       ),
